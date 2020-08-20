@@ -3,12 +3,13 @@ $(document).ready(function(){
         if ((passVal==="")||(userVal==="")||(emailVal==="")||(ageVal==="")){
             $("#pass").css("border-color","red");
             $("#userN").css("border-color","red");
-            $("#pass").after("<br><span>please recheck you'r password </span>");
-            $("#userN").after("<br><span>please recheck you'r user name</span>");
+            $("#pass").after("<br><span>please recheck you'r password <\\span>");
+            $("#userN").after("<br><span>please recheck you'r user name<\\span>");
             return false;
         }else if (passVal.length<6){
             $("#pass").css("border-color","red");
             $("#pass").after("<br><span>password length should be at least 6 chars</span>");
+            return false;
         }
         return true
     }
@@ -18,22 +19,23 @@ $(document).ready(function(){
     $("#SI").on("click",function(){
         var passVal=$("#pass")[0].value;
         var userVal=$("#userN")[0].value;
-        check(passVal,userVal)
+        if(check(passVal,userVal)){
         var users = JSON.parse(localStorage.getItem('userArray'));
         var i=0;
-      /**  while (i<users.length){
+       while (i<users.length){
             if (((users[i].name===userVal)||(users[i].email===userVal))&&(users[i].password===passVal)){
                 break;
             }
             i++;
         }
-        if (i<users.length){
-            console.log("exists")
-        }else{
-            $("#pass").after("<br><span>please recheck you'r password </span>");
-            $("#userN").after("<br><span>please recheck you'r user name</span>");
+        if (i < users.length){
+            var arr=[users[i]],localStorageTheArray;
+            localStorage.setItem('logIn', JSON.stringify(arr));
+            window.open("C:\\Users\\RBK\\Desktop\\K-O-FinalP\\index.html","_self")
         }
-        */
+        
+    }
+
     })
     $("#signUp").on("click",function(){
         $("#SI").hide()
