@@ -3,8 +3,8 @@ $(document).ready(function(){
         if ((passVal==="")||(userVal==="")||(emailVal==="")||(ageVal==="")){
             $("#pass").css("border-color","red");
             $("#userN").css("border-color","red");
-            $("#pass").after("<br><span>please recheck you'r password <\\span>");
-            $("#userN").after("<br><span>please recheck you'r user name<\\span>");
+            $("#pass").after("<br><span>please recheck you'r password </span>");
+            $("#userN").after("<br><span>please recheck you'r user name</span>");
             return false;
         }else if (passVal.length<6){
             $("#pass").css("border-color","red");
@@ -31,7 +31,7 @@ $(document).ready(function(){
         if (i < users.length){
             var arr=[users[i]],localStorageTheArray;
             localStorage.setItem('logIn', JSON.stringify(arr));
-            window.open("C:\\Users\\RBK\\Desktop\\K-O-FinalP\\index.html","_self")
+            window.open("C:/Users/RBK/Desktop/K-O-FinalP/index.html","_self")
         }
         
     }
