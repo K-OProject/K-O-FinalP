@@ -55,7 +55,12 @@ $(document).ready(function(){
             obj.email=emailVal;
             obj.age=ageVal;
             if (check(passVal,userVal,emailVal,ageVal)){
+                if (users===null){
+                users=[];
                 users.push(obj);
+                }else{
+                    users.push(obj);
+                }
                 localStorage.setItem('userArray', JSON.stringify(users))
             }
         });
