@@ -1,0 +1,19 @@
+body{
+    background: url("file:///C:/Users/henio/OneDrive/Desktop/duo project/K-O-FinalP/assets/log-in.gif")no-repeat;
+    background-position-x: 50%;
+    background-position-y: 260px;
+    
+}
+.films{
+    display: inline;
+}
+.fi{
+    float: 20px;
+}
+.firstfilm {
+    width: 300px;
+    height: 200px;
+    border: 2px solid rgb(50, 50, 184);
+    margin-right: 100px;
+    margin-top: 20px;
+}
