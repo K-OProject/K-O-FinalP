@@ -1,8 +1,18 @@
 body{
-    background: url("file:///C:/Users/henio/OneDrive/Desktop/duo project/K-O-FinalP/assets/log-in.gif")no-repeat;
+    background: url("file:///C:/Users/rabek/Desktop/K-O-FinalP/assets/log-in.gif")no-repeat;
     background-position-x: 50%;
     background-position-y: 260px;
     
+}
+#h11{
+    float: right;
+}
+#h1d{
+    display: inline;
+}
+#h12{
+    padding:20%;
+    color: whitesmoke;
 }
 .films{
     display: inline;
