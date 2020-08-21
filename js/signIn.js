@@ -31,7 +31,7 @@ $(document).ready(function(){
         if (i < users.length){
             var arr=[users[i]],localStorageTheArray;
             localStorage.setItem('logIn', JSON.stringify(arr));
-            window.open("C:/Users/RBK/Desktop/K-O-FinalP/index.html","_self")
+            window.open("../html/reserve.html")
         }
         
     }
