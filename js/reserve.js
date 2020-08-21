@@ -1,15 +1,28 @@
 $(document).ready(function(){
+    $(".firstfilm").hide()
+    $(".Log-out").hide()
     $(".films").hide()
+    $('.h12').hide()
     $("#rb").hide()
     var user = JSON.parse(localStorage.getItem('logIn'));
     if (user.length>0){
+
         $("body").css({"background": "url('../assets/bg.jpg')no-repeat","background-size":"100%"})
+        $(".firstfilm").show()
         $(".films").show()
+        $('.h12').show()
+        $(".Sign-in").hide();
+        $("#lo").show()
+   		$(`<a class="h12">${user[0].name}</a>`).appendTo("header")
 }
 
 //------------------------------------------------------------------------
 
-
+$("#lo").on("click",function(){
+	var user=[];
+	localStorage.setItem('logIn', JSON.stringify(user));
+	location.reload();
+})
 
 })
 
