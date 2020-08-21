@@ -4,42 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserve</title>
-    <link rel="stylesheet" type="text/css" href="file:///C:/Users/rabek/Desktop/K-O-FinalP/style/styleHeader.css">
-    <link rel="stylesheet" href="file:///C:/Users/rabek/Desktop/K-O-FinalP/style/reservation.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/henio/OneDrive/Desktop/duo%20project/K-O-FinalP/style/styleHeader.css">
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/henio/OneDrive/Desktop/duo%20project/K-O-FinalP/style/reservation.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="file:///C:/Users/henio/OneDrive/Desktop/duo project/K-O-FinalP/js/reserve.js"></script>
 </head>
 <body>
-    <!-- <div class="header">
-        <a href="file:///C:/Users/RBK/Desktop/K-O-FinalP/index.html
-        ">home</a>
-        <a href="file:///C:/Users/RBK/Desktop/K-O-FinalP/html/reserve.html">reservation</a>
-        <a href="#">sign-in</a>
-        <a href="#">contact us</a>
-  </div> -->
+    
   <header>
     <div class="header">
         <a  href="#">Home</a>
         <a class="active" href="#">Reservation</a>
         <a href="#">Contact us</a>
+        <a href="#" class="h12">K-O Cinema</a>
 
-        <a class="Log-out" id="lo" href="">LogOut</a>
-        <a class="Sign-in" href="file:///C:/Users/henio/OneDrive/Desktop/duo%20project/K-O-FinalP/html/signIn.htm">Sign-in</a>
+        <button class="Log-out" id="lo" >LogOut</button> 
+        <a class="Sign-in" href="../html/signIn.htm">Sign-in</a>
  </div>
   </header>
-    <h1 id="h11">K-O Cinema</h1>
   <br>
-  <div >
-    <img id="365" src="file:///C:/Users/rabek/Desktop/K-O-FinalP/assets/365.jfif" alt="365" class="firstfilm" class="fi" onclick="clickImg('#365')">
-      <img src="file:///C:/Users/rabek/Desktop/K-O-FinalP/assets/extraction.jfif" alt="extraction" class="firstfilm" id="extraction" onclick="clickImg('#extraction')">
-      <img src="file:///C:/Users/rabek/Desktop/K-O-FinalP/assets/notimetodie.jfif" alt="notimetodie" class="firstfilm" id="notimetodie" onclick="clickImg('#notimetodie')">
+  <h1  class="h12">Click on the image to reserve a spot</h1>
+  <br>
+  <div>
+    <img id="365" src="../assets/365.jfif" alt="365" class="firstfilm" class="fi" onclick="clickImg('#365')">
+      <img src="../assets/extraction.jfif" alt="extraction" class="firstfilm" id="extraction" onclick="clickImg('#extraction')">
+      <img src="../assets/notimetodie.jfif" alt="notimetodie" class="firstfilm" id="notimetodie" onclick="clickImg('#notimetodie')">
   </div>
-  <div >
-    <img src="file:///C:/Users/rabek/Desktop/K-O-FinalP/assets/spencer.jfif" alt="spencer" class="firstfilm" class="fi" id="spencer" onclick="clickImg('#spencer')">
-    <img src="file:///C:/Users/rabek/Desktop/K-O-FinalP/assets/power.jfif" alt="power" class="firstfilm" id="power" onclick="clickImg('#power')">
-    <img src="file:///C:/Users/rabek/Desktop/K-O-FinalP/assets/waroftheworlds.jfif" alt="waroftheworlds" class="firstfilm" id="waroftheworlds" onclick="clickImg('#waroftheworlds')">
+  <div>
+    <img src="../assets/spencer.jfif" alt="spencer" class="firstfilm" class="fi" id="spencer" onclick="clickImg('#spencer')">
+    <img src="../assets/power.jfif" alt="power" class="firstfilm" id="power" onclick="clickImg('#power')">
+    <img src="../assets/waroftheworlds.jfif" alt="waroftheworlds" class="firstfilm" id="waroftheworlds" onclick="clickImg('#waroftheworlds')">
 </div>
-<h1 class="films" id="h12">Click on the image to reserve a spot</h1>
-<button onClick="window.location.reload();" id="rb">Choose another film</button>
-<script src="file:///C:/Users/rabek/Desktop/K-O-FinalP/js/reserve.js"></script>
+
+<button onClick="window.location.reload();" id="rb" >Choose another film</button>
+
   </body>
 </html>
