@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $(".films").hide()
+    $(".Log-out").hide()
  
 
     var user = JSON.parse(localStorage.getItem('logIn'));

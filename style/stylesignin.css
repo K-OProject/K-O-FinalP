@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #FFF8DC;
+/*	background-color: #FFF8DC;*/
 	
 	text-align: center;
 }
@@ -13,9 +13,9 @@ form{
 	padding: 20px;
 	margin: 8% auto;
 	display: inline-block;
-	background-color: #FFF8DC;
+	background-color: #2f3742;
 	border-radius: 25px;
-	
+
 }
 
 form #userN {
@@ -59,3 +59,4 @@ form #signUp {
 	 border: 1px solid;
 	 border-radius: 25px;
 }
+
