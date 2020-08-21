@@ -1,15 +1,32 @@
 body{
+<<<<<<< HEAD
     background: url("file:///C:/Users/henio/OneDrive/Desktop/duo project/K-O-FinalP/assets/log-in.gif")no-repeat;
     margin: 0;
     padding: 0;
+=======
+    background: url("file:///C:/Users/rabek/Desktop/K-O-FinalP/assets/log-in.gif")no-repeat;
+>>>>>>> 0859d2933348a910c735f4231d471494ec8681c8
     background-position-x: 50%;
     background-position-y: 260px;
     text-align: center;
  
 
 }
+<<<<<<< HEAD
 
 
+=======
+#h11{
+    float: right;
+}
+#h1d{
+    display: inline;
+}
+#h12{
+    padding:20%;
+    color: whitesmoke;
+}
+>>>>>>> 0859d2933348a910c735f4231d471494ec8681c8
 .films{
     display: inline;
 }

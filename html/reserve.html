@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserve</title>
-    <link rel="stylesheet" type="text/css" href="file:///C:/Users/henio/OneDrive/Desktop/duo%20project/K-O-FinalP/style/styleHeader.css">
-    <link rel="stylesheet" href="file:///C:/Users/henio/OneDrive/Desktop/duo%20project/K-O-FinalP/style/reservation.css">
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/rabek/Desktop/K-O-FinalP/style/styleHeader.css">
+    <link rel="stylesheet" href="file:///C:/Users/rabek/Desktop/K-O-FinalP/style/reservation.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="file:///C:/Users/henio/OneDrive/Desktop/duo project/K-O-FinalP/js/reserve.js"></script>
 </head>
 <body>
     <!-- <div class="header">
@@ -22,20 +21,25 @@
         <a  href="#">Home</a>
         <a class="active" href="#">Reservation</a>
         <a href="#">Contact us</a>
+
         <a class="Log-out" id="lo" href="">LogOut</a>
         <a class="Sign-in" href="file:///C:/Users/henio/OneDrive/Desktop/duo%20project/K-O-FinalP/html/signIn.htm">Sign-in</a>
-    </div>
+ </div>
   </header>
-  <h1 style="color:silver; text-align:center;" class="films">click on the image to reserve a spot  </h1>
-  <div class="films">
-      <img src="file:///C:/Users/henio/OneDrive/Desktop/duo project/K-O-FinalP/assets/365.jfif" alt="365" class="firstfilm" class="fi">
-      <img src="file:///C:/Users/henio/OneDrive/Desktop/duo project/K-O-FinalP/assets/extraction.jfif" alt="extraction" class="firstfilm">
-      <img src="file:///C:/Users/henio/OneDrive/Desktop/duo project/K-O-FinalP/assets/notimetodie.jfif" alt="no time to die" class="firstfilm">
+    <h1 id="h11">K-O Cinema</h1>
+  <br>
+  <div >
+    <img id="365" src="file:///C:/Users/rabek/Desktop/K-O-FinalP/assets/365.jfif" alt="365" class="firstfilm" class="fi" onclick="clickImg('#365')">
+      <img src="file:///C:/Users/rabek/Desktop/K-O-FinalP/assets/extraction.jfif" alt="extraction" class="firstfilm" id="extraction" onclick="clickImg('#extraction')">
+      <img src="file:///C:/Users/rabek/Desktop/K-O-FinalP/assets/notimetodie.jfif" alt="notimetodie" class="firstfilm" id="notimetodie" onclick="clickImg('#notimetodie')">
   </div>
-  <div class="films">
-    <img src="file:///C:/Users/henio/OneDrive/Desktop/duo project/K-O-FinalP/assets/power.jfif" alt="365" class="firstfilm" class="fi">
-    <img src="file:///C:/Users/henio/OneDrive/Desktop/duo project/K-O-FinalP/assets/spencer.jfif" alt="extraction" class="firstfilm">
-    <img src="file:///C:/Users/henio/OneDrive/Desktop/duo project/K-O-FinalP/assets/waroftheworlds.jfif" alt="no time to die" class="firstfilm">
+  <div >
+    <img src="file:///C:/Users/rabek/Desktop/K-O-FinalP/assets/spencer.jfif" alt="spencer" class="firstfilm" class="fi" id="spencer" onclick="clickImg('#spencer')">
+    <img src="file:///C:/Users/rabek/Desktop/K-O-FinalP/assets/power.jfif" alt="power" class="firstfilm" id="power" onclick="clickImg('#power')">
+    <img src="file:///C:/Users/rabek/Desktop/K-O-FinalP/assets/waroftheworlds.jfif" alt="waroftheworlds" class="firstfilm" id="waroftheworlds" onclick="clickImg('#waroftheworlds')">
 </div>
+<h1 class="films" id="h12">Click on the image to reserve a spot</h1>
+<button onClick="window.location.reload();" id="rb">Choose another film</button>
+<script src="file:///C:/Users/rabek/Desktop/K-O-FinalP/js/reserve.js"></script>
   </body>
 </html>
