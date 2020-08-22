@@ -1,14 +1,8 @@
 $(document).ready(function(){
     function check(passVal,userVal,emailVal,ageVal){
         if ((passVal==="")||(userVal==="")||(emailVal==="")||(ageVal==="")){
-            $("#pass").css("border-color","red");
-            $("#userN").css("border-color","red");
-            $("#pass").after("<br><span>please recheck you'r password </span>");
-            $("#userN").after("<br><span>please recheck you'r user name</span>");
             return false;
         }else if (passVal.length<6){
-            $("#pass").css("border-color","red");
-            $("#pass").after("<br><span>password length should be at least 6 chars</span>");
             return false;
         }
         return true
@@ -32,10 +26,10 @@ $(document).ready(function(){
             var arr=[users[i]],localStorageTheArray;
             localStorage.setItem('logIn', JSON.stringify(arr));
             window.open("../html/reserve.html")
+        }else{
+            alert("wrong password or user name")
         }
-        
     }
-
     })
     $("#signUp").on("click",function(){
         $("#SI").hide()
@@ -44,6 +38,7 @@ $(document).ready(function(){
         $(".email").show();
         $("#SU").show();
         $("#SU").on("click",function(){
+            debugger;
             var users = JSON.parse(localStorage.getItem('userArray'));
             var obj={};
             var passVal=$("#pass")[0].value;
@@ -54,15 +49,32 @@ $(document).ready(function(){
             obj.password=passVal;
             obj.email=emailVal;
             obj.age=ageVal;
-            if (check(passVal,userVal,emailVal,ageVal)){
-                if (users===null){
-                users=[];
-                users.push(obj);
-                }else{
-                    users.push(obj);
-                }
-                localStorage.setItem('userArray', JSON.stringify(users))
+            if (users.length===0){
+                users.push(obj)
             }
+             if ((check(passVal,userVal,emailVal,ageVal))&&(chEx(users,emailVal,userVal))){
+                    users.push(obj);
+                }else{
+                    alert("user name or email already exist");
+            }
+            localStorage.setItem('userArray', JSON.stringify(users))
         });
     })
 })
+function chEx(users,emV,usN){
+    for (var i=0;i<users.length;i++){
+        if ((users[i].name===usN)||(users[i].email===emV)){
+        return false;
+    }
+    
+}
+return true;
+}
+
+// $("#pass").css("border-color","red");
+// $("#userN").css("border-color","red");
+// $("#pass").after("<br><span>please recheck you'r password </span>");
+// $("#userN").after("<br><span>please recheck you'r user name</span>");
+
+// $("#pass").css("border-color","red");
+//             $("#pass").after("<br><span>password length should be at least 6 chars</span>");

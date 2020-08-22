@@ -3,6 +3,7 @@
 	font-family: cursive;
 }*/
 body {
+  margin: 0;
   background-color: #2f3742;
   color: #dfe0e4;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -12,7 +13,7 @@ body {
 .header {
   overflow: hidden;
   background-color: black;
-  padding: 20px 10px;
+  padding: 12px 6px;
 }
 
 .header a {
@@ -41,27 +42,22 @@ body {
  	float: right;
  }
 
+@import url('https://fonts.googleapis.com/css?family=Warnes&display=swap');
+ h1 {
+   font-size: 80px;
+   text-align: center;
+   font-family: 'Warnes', cursive;
+   color: #fff;
+   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073E6, 0 0 20px #0073E6, 0 0 25px #0073E6, 0 0 30px #0073E6, 0 0 35px #0073E6;
+   float: center;
+ }
 
-/*h1 {
-  font-size: 80px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
-}*/
-/*
-h1 {
-  font-size: 80px;
-  text-align: center;
-  color: #fff;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
-  }
-  to {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
-  }
-}*/
+ h2{
+   font-size: 35px;
+   text-align: center;
+   font-family: 'Warnes', cursive;
+   color:;
+   text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+   float: right;
+ }
 
