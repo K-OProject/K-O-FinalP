@@ -6,6 +6,7 @@ $(document).ready(function(){
     $("#rb").hide()
     var user = JSON.parse(localStorage.getItem('logIn'));
     if (user.length>0){
+
         $("body").css({"background": "url('../assets/bg.jpg')no-repeat","background-size":"100%"})
         $(".firstfilm").show()
         $(".films").show()
