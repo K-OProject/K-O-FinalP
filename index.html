@@ -4,21 +4,29 @@
 	<title>K-O Project</title>
 	<meta charset="utf-8">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="C:\Users\henio\OneDrive\Desktop\duo project\K-O-FinalP\js\main.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/styleHeader.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
+	<header>
       <div class="header">
 			  <a class="active" href="#">Home</a>
-			  <a href="#">Reservation</a>
-			  <a href="#">Contact us</a>
-			  <a class="Sign-in" href="#">Sign-in</a>
+			  <a href="html/reserve.html">Reservation</a>
+			  <a href="html/contactUs.html">Contact us</a>
+			  <button class="Log-out" id="lo" >LogOut</button> 
+			  <a class="Sign-in" href="html/signIn.htm">Sign-in</a>
 	  </div>
-	  <h1>K-O CINEMA</h1>
-
-	
-		      
+	  </header>
+	  <h1>WELCOME<br>TO<br>K-O CINEMA</h1>
+	  <h2>Site under construction</h2>
+	  <script type="text/javascript">
+	  	$("#lo").hide()
+	  	var user = JSON.parse(localStorage.getItem('logIn'));
+    if (user.length>0){
+    	$("#lo").show()
+    	$(".Sign-in").hide();
+    }
+	  </script>     
 
 </body>
 </html>

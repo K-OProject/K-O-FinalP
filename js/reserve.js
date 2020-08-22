@@ -6,7 +6,7 @@ $(document).ready(function(){
     $("#rb").hide()
     var user = JSON.parse(localStorage.getItem('logIn'));
     if (user.length>0){
-        $("body").css({"background": "url('file:///C:/Users/henio/OneDrive/Desktop/duo project/K-O-FinalP/assets/bg.jpg')no-repeat","background-size":"100%"})
+        $("body").css({"background": "url('../assets/bg.jpg')no-repeat","background-size":"100%"})
         $(".firstfilm").show()
         $(".films").show()
         $('.h12').show()
@@ -41,7 +41,7 @@ function clickImg(str){
     }
     if (count>0){
         $(`<br><label style="color :#ff1a1a; font-size :40px"><b>You can reserve up too "${count}" places</b></label><div><input type="Number" placeholder=" ${count}" max="${count}" min="0" id="resVal"></div>`).appendTo("body");
-        $("<button id='cf'>click to confirm</button>").appendTo("body");
+        $("<button id='cf' style=' padding: 15px;border: 1px solid;border-radius:25px; background-color: dodgerblue;'>click to confirm</button>").appendTo("body");
         var theUser = JSON.parse(localStorage.getItem('logIn'));
         $("#cf").on("click",function(){
             var xcount=0;
